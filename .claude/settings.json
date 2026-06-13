@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c \"import PIL; print\\(PIL.__version__\\)\")",
+      "Bash(python -)",
+      "Bash(gh auth *)",
+      "Bash(git init *)",
+      "Bash(git branch *)"
+    ]
+  }
+}
