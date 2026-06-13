@@ -5,7 +5,8 @@
       "Bash(python -)",
       "Bash(gh auth *)",
       "Bash(git init *)",
-      "Bash(git branch *)"
+      "Bash(git branch *)",
+      "Bash(gh repo *)"
     ]
   }
 }
