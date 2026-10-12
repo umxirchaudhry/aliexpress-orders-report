@@ -8,36 +8,84 @@
   body { font-family: -apple-system, Segoe UI, Arial, sans-serif; max-width: 700px; margin: 40px auto; padding: 0 16px; color: #1a1a1a; line-height: 1.6; }
   h1 { font-size: 24px; }
   h2 { font-size: 18px; margin-top: 28px; }
+  .highlight { background: #f8f8f8; padding: 16px; border-radius: 8px; margin: 16px 0; }
+  .yes { color: #2e7d32; }
+  .no { color: #c62828; }
+  ul { margin: 8px 0; padding-left: 24px; }
   footer { margin-top: 40px; font-size: 12px; color: #888; }
 </style>
 </head>
 <body>
   <h1>Privacy Policy</h1>
-  <p>Last updated: June 13, 2026</p>
+  <p>Last updated: October 12, 2026</p>
 
   <p>"AliExpress Orders Report" ("the extension") is a browser extension that helps you export your AliExpress order history to Excel (XLSX) or CSV files.</p>
 
-  <h2>Data Collection</h2>
-  <p>The extension does not collect, transmit, store, or share any personal data, browsing history, or order information with us or any third party.</p>
-
   <h2>How the Extension Works</h2>
-  <p>When you click "Export Orders," the extension reads order details (date, order number, status, product names, price, and quantity) directly from the AliExpress Orders page that is currently open in your browser. This data is processed entirely on your device and is used only to generate the Excel or CSV file that is downloaded to your computer.</p>
+  <p>When you click "Export Orders," the extension reads order details directly from the AliExpress Orders page that is currently open in your browser. This data is processed on your device and used to generate the Excel or CSV file that is downloaded to your computer.</p>
 
-  <h2>Data Storage</h2>
-  <p>No data is stored by the extension beyond the local file you choose to save. The extension does not use cookies, analytics, or remote servers.</p>
+  <h2>Optional Data Collection</h2>
+  <p>The extension offers an <strong>optional</strong> feature to contribute anonymous product data to help build a price history database. This feature is <strong>disabled by default</strong> and requires your explicit consent.</p>
+
+  <div class="highlight">
+    <p><strong>If you choose to participate, we collect:</strong></p>
+    <ul class="yes">
+      <li>Product URLs (links to AliExpress product pages)</li>
+      <li>Product names</li>
+      <li>Order prices and currency</li>
+      <li>Order dates</li>
+    </ul>
+
+    <p><strong>We NEVER collect:</strong></p>
+    <ul class="no">
+      <li>Order numbers or transaction IDs</li>
+      <li>Your identity, email, or account information</li>
+      <li>Shipping addresses or payment details</li>
+      <li>Quantities purchased</li>
+      <li>IP addresses (not logged on our servers)</li>
+    </ul>
+  </div>
+
+  <h2>Your Choices</h2>
+  <p>Data sharing is completely optional:</p>
+  <ul>
+    <li>You are asked once when you first use the extension</li>
+    <li>The default option is "No" (local export only)</li>
+    <li>You can change your preference at any time via the Settings menu (gear icon)</li>
+    <li>If you opt out, no data is ever sent to our servers</li>
+  </ul>
+
+  <h2>How We Use Collected Data</h2>
+  <p>If you opt in, the anonymous product data is used solely to:</p>
+  <ul>
+    <li>Build a price history database for AliExpress products</li>
+    <li>Track price trends over time</li>
+    <li>Potentially help users find better deals (future feature)</li>
+  </ul>
+  <p>We do not sell, trade, or share this data with third parties for advertising or marketing purposes.</p>
+
+  <h2>Data Retention</h2>
+  <p>Collected product data (if you opt in) is stored indefinitely to maintain price history. Since no personal identifiers are collected, this data cannot be linked back to you.</p>
+
+  <h2>Data Security</h2>
+  <p>All data transmissions use HTTPS encryption. Our servers follow industry-standard security practices.</p>
 
   <h2>Permissions</h2>
-  <p>The extension requests the minimum permissions required to read the active AliExpress tab and save the exported file (activeTab, scripting, downloads, and access to aliexpress.com).</p>
-
-  <h2>Third-Party Sharing</h2>
-  <p>We do not sell, trade, or transfer any data to third parties, because no data is collected in the first place.</p>
+  <p>The extension requests the following permissions:</p>
+  <ul>
+    <li><strong>activeTab</strong> - Read the current AliExpress Orders page</li>
+    <li><strong>scripting</strong> - Extract order data from the page</li>
+    <li><strong>downloads</strong> - Save the exported file to your computer</li>
+    <li><strong>storage</strong> - Remember your data sharing preference</li>
+    <li><strong>host_permissions (aliexpress.com)</strong> - Only operates on AliExpress pages</li>
+  </ul>
 
   <h2>Changes to This Policy</h2>
-  <p>If this policy changes, the updated version will be posted on this page.</p>
+  <p>If this policy changes, the updated version will be posted on this page. Significant changes to data collection practices will prompt a new consent request in the extension.</p>
 
   <h2>Contact</h2>
   <p>If you have questions about this privacy policy, contact us at: <a href="mailto:Extension@umxir.com">Extension@umxir.com</a></p>
 
-  <footer>AliExpress Orders Report Extension</footer>
+  <footer>AliExpress Orders Report Extension v2.0</footer>
 </body>
 </html>
